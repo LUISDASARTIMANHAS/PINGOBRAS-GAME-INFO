@@ -22,7 +22,7 @@ to this section's matching END comment to see page-specific styles.
 }
 :root {
   --color-padrao: white;
-  --color-text-main: #000000;
+  --color-text-main: black;
   --color-primary: #FFFF00;
   --wrapper-altura: 87vh;
   --image-max-largura: 100px;
@@ -41,8 +41,6 @@ to this section's matching END comment to see page-specific styles.
   --sub-tamanho: 17pt;
   --X: 0px;
   --Y: 390px;
-  --PINGOBRASIMG: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/pingobras.png?v=1650114443929); 
-  --PINGOBRASIMG2: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/PINGOBRAS.png?v=1650116906906); 
   
   --display: flex formato de celular;
   --height: "altuta";
@@ -70,48 +68,6 @@ button:hover {
   transition: all 1s ease-out;
 }
 
-.btndc{
-      background-color: gray;
-        padding: var(--btn-tamanho);
-        font-weight: bold;
-}
-.btndc img {
-  margin-right: auto;
-}
-.btndc:hover {
-  background-image: linear-gradient(45deg, gray, green);
-  cursor: pointer;
-  box-shadow: -8px 20px 20px gray;
-  transform: translateY(5px);
-  transition: all 1s ease-out;
-}
-
-.btnlogin { 
-        background-color: blue;
-        padding: var(--btn-tamanho);    
-}
-.btnlogin img{
- margin-right: auto;
-}
-.btnlogin:hover {
-  background-image: linear-gradient(45deg, blue, green);
-  cursor: pointer;
-  box-shadow: -8px 20px 20px gray;
-  transform: translateY(5px);    
-  transition: all 1s ease-out;
-}
-
- .btncadastro{
-        background-color: purple;
-        padding: var(--btn-tamanho);
-}
-      .btncadastro:hover{
-        background-image: linear-gradient(45deg, purple, green);
-        cursor: pointer;
-        box-shadow: -8px 20px 20px gray;
-        transform: translateY(5px);
-        transition: all 1s ease-out;
-        }
 .btn-pages{
         background-color: green;
         padding: var(--btn-tamanho);
@@ -138,16 +94,6 @@ button:hover {
       z-index: 11;
 }
 
-.tela{
-        background-color:  linear-gradient(45deg, blue, green);
-        position: absolute;
-        justify-content: center;
-        padding: 60px;
-        border-radius: 20px;
-        color: black;
-        box-shadow: 3px 3px 43px 0px black;
-        }
-/* Navigation grid */
 /******************************************************************************
 END Glitch hello-app default styles
 ******************************************************************************/
@@ -160,21 +106,6 @@ body {
       background-size: 140%;
       justify-content: center;
      }
-a{
-  font-size: 15px;
-  border: 5px solid black;
-  font-weight: bold;
-  text-decoration: none;
-  transform: translateY(5px);
-  transition: all .3s ease-out;
-  width: 75%;
-  border-radius: 15px;
-  display: flex;
-  margin-top: 15px;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
 a:hover{
   color: red;
 }
