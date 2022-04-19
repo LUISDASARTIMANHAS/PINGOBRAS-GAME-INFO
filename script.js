@@ -25,3 +25,19 @@ if (btn) {
 This is a comment that can span multiple lines 
 - use comments to make your own notes!
 */
+
+let fullscreen;
+let fsEnter = document.getElementById('fullscr');
+fsEnter.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (!fullscreen) {
+        fullscreen = true;
+        document.documentElement.requestFullscreen();
+        fsEnter.innerHTML = "SAIR DA TELA CHEIA";
+    }
+    else {
+        fullscreen = false;
+        document.exitFullscreen();
+        fsEnter.innerHTML = "TELA CHEIA";
+    }
+});
