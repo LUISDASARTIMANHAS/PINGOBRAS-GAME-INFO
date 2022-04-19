@@ -21,7 +21,7 @@ to this section's matching END comment to see page-specific styles.
     format("opentype");
 }
 :root {
-  --color-padrao: gray;
+  --color-padrao: white;
   --color-text-main: #000000;
   --color-primary: #FFFF00;
   --wrapper-altura: 87vh;
