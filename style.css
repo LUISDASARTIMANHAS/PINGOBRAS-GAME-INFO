@@ -15,159 +15,245 @@ to this section's matching END comment to see page-specific styles.
 */
 
 /* Our default values set as CSS variables */
+@font-face{
+  font-family: 'Noto Sans Mono', monospace;
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap")
+    format("opentype");
+}
 :root {
-  --color-bg: #69F7BE;
+  --color-padrao: gray;
   --color-text-main: #000000;
   --color-primary: #FFFF00;
-  --wrapper-height: 87vh;
-  --image-max-width: 300px;
-  --image-margin: 3rem;
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
+  --wrapper-altura: 87vh;
+  --image-max-largura: 100px;
+  --image-margin: 1rem;
+  --font-principal: "Arial";
+  --font-family-cabecalho: "Roboto, sans-serif;";
+  --max-largura: 144px;
+  --max-altura: 544px;
+  --max-peso: 500;
+  --font-tamanho: 15px;
+  --font-tamanho-cabecalho: 20px;
+  --fundo-padrao: white;
+  --negrito: bold;
+  --espaco-em-branco: nowrap;
+  --btn-tamanho: 10pt;
+  --sub-tamanho: 17pt;
+  --X: 0px;
+  --Y: 390px;
+  --PINGOBRASIMG: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/pingobras.png?v=1650114443929); 
+  --PINGOBRASIMG2: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/PINGOBRAS.png?v=1650116906906); 
+  
+  --display: flex formato de celular;
+  --height: "altuta";
+  --Weight: "peso";
+  --width: "largura";
+  --white-space: "espaco em branco";
+    
 }
-
 /* Basic page style resets */
-* {
+*  {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 [hidden] {
   display: none !important;
 }
-
-/* Import fonts */
-@font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
+/* Iamport fonts *//* Our remix on glitch button */
+.btndc{
+      background-color: gray;
+        padding: var(--btn-tamanho);
+        font-weight: bold;
 }
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
+.btndc img {
+  margin-right: auto;
 }
-
-/* Our remix on glitch button */
-.btn--remix {
-  font-family: HK Grotesk;
-  padding: 0.75rem 1rem;
-  font-size: 1.1rem;
-  line-height: 1rem;
-  font-weight: 500;
-  height: 2.75rem;
-  align-items: center;
+.btndc:hover {
+  background-image: linear-gradient(45deg, gray, green);
   cursor: pointer;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #000;
-  white-space: nowrap;
-  margin-left: auto;
-}
-.btn--remix img {
-  margin-right: 0.5rem;
-}
-.btn--remix:hover {
-  background-color: #D0FFF1;
+  box-shadow: -8px 20px 20px gray;
+  transform: translateY(5px);
+  transition: all 1s ease-out;
 }
 
+.btnlogin { 
+        background-color: blue;
+        padding: var(--btn-tamanho);    
+}
+.btnlogin img{
+ margin-right: auto;
+}
+.btnlogin:hover {
+  background-image: linear-gradient(45deg, blue, green);
+  cursor: pointer;
+  box-shadow: -8px 20px 20px gray;
+  transform: translateY(5px);    
+  transition: all 1s ease-out;
+}
+
+ .btncadastro{
+        background-color: purple;
+        padding: var(--btn-tamanho);
+}
+      .btncadastro:hover{
+        background-image: linear-gradient(45deg, purple, green);
+        cursor: pointer;
+        box-shadow: -8px 20px 20px gray;
+        transform: translateY(5px);
+        transition: all 1s ease-out;
+        }
+.btn-pages{
+        background-color: green;
+        padding: var(--btn-tamanho);
+}
+.btn-pages:hover{
+        background-image: linear-gradient(45deg, green, blue);
+        cursor: pointer;
+        box-shadow: -8px 20px 20px gray;
+        transform: translateY(5px);
+        transition: all 1s ease-out;
+}
+
+.tela{
+        background-color:  linear-gradient(45deg, blue, green);
+        position: absolute;
+        justify-content: center;
+        padding: 60px;
+        border-radius: 20px;
+        color: black;
+        box-shadow: 3px 3px 43px 0px black;
+        }
 /* Navigation grid */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem auto 0;
-  padding: 1rem 0 0.75rem 0;
-  width: 100%;
-  flex-wrap: wrap;
-  border-top: 4px solid #fff;
-}
-
-.footer a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.1rem;
-  color: #000;
-  text-decoration: none;
-  border-style: none;
-}
-.footer a:hover {
-  background: var(--color-primary);
-}
-
-.footer .links {
-  padding: 0.5rem 1rem 1.5rem;
-  white-space: nowrap;
-}
-
-.divider {
-  padding: 0 1rem;
-}
 /******************************************************************************
 END Glitch hello-app default styles
 ******************************************************************************/
 
 body {
-  font-family: HK Grotesk;
-  background-color: var(--color-bg);
+      font-family: Arial, helvetica, sans-serif;
+       background-color: var(--color-padrao);
+       width: 100%;
+       background-repeat: no-repeat;
+      background-size: 140%;
+      justify-content: center;
+     }
+a{
+  font-size: 15px;
+  border: 5px solid black;
+  font-weight: bold;
+  text-decoration: none;
+  transform: translateY(5px);
+  transition: all .3s ease-out;
+  width: 75%;
+  border-radius: 15px;
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
+a:hover{
+  color: red;
+}
+main-text{
+  text-align: center;
+  font-size: 20pt;
+  margin-bottom: 15px;
+  color: black;
+}
+h2{
+   display: inline-block;
+   text-align: center;
+   font-size: var(--sub-tamanho);
+   color: blue;
+  }
+h3{
+   display: inline-block;
+   text-align: center;
+   font-size: var(--sub-tamanho);
+   color: green;
+  }
+hr{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 60%;
+}
+tituloblue{
+  text-align: center;
+   margin-bottom: 20px;
+   color: blue;
+  }
+tituloyellow{
+   text-align: center;
+   margin-bottom: 20px;
+   color: yellow;
+  }
 
-/* Page structure */
-.wrapper {
-  min-height: var(--wrapper-height);
+/* Page alturaure */
+.site-altura {
+  min-height: var(--wrapper-altura);
   display: grid;
   place-items: center;
   margin: 0 1rem;
 }
-.content {
+.conteudo {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  margin-top: 100px;
 }
-
-/* Very light scaling for our illustration */
-.title {
-  color: #2800FF;
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 100px;
-  line-height: 105%;
-  margin: 0;
-}
-
-/* Very light scaling for our illustration */
-.illustration {
-  max-width: 100%;
-  max-height: var(--image-max-width);
-  margin-top: var(--image-margin);
-}
-
 /* Instructions */
-.instructions {
+      .instructions{
+        margin: 1rem auto 0;
+}
+/* Navigation grid */
+.footer{
+  display: flex;
+  justify-content: space-between;
   margin: 1rem auto 0;
+  width: 100%;
+  font-size: 15pt;
+  text-align: center;
+  padding: 1rem 0 0.75rem 0;
+  flex-wrap: wrap;
+  border-top: 4px solid white;
+  
+
+}
+.footer.links {
+  padding: 0.5rem 1rem 1.5rem;
+  white-space: nowrap;
+}
+.footer-dev{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  width: 100%;
+  color: white;
+}
+
+
+.divider {
+  padding: 0 1rem;
 }
 
 /* Button - Add it from the README instructions */
-button,
-input {
-  font-family: inherit;
-  font-size: 100%;
-  background: #FFFFFF;
-  border: 1px solid #000000;
+btn,input{
+  border: 3px solid black;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 0.5rem 1rem;
+  padding: 1px;
+  box-shadow: -8px 4px 20px gray;
   transition: 500ms;
+  margin-right: auto;
 }
-
-/* Subheading */
-h2 {
-  color: #2800FF;
+   .PNG{
+     box-shadow: -8px 20px 20px gray;
+     width: 50%;
+     justify-content: space-between;
 }
 
 /* Interactive image */
@@ -179,6 +265,7 @@ h2 {
 - Toggling this class on and off will move it down and up again
 - The button transition property above determines the speed of the translate (500ms)
 */
-.dipped {
+  
+  .dipped {
   transform: translateY(5px);
 }
