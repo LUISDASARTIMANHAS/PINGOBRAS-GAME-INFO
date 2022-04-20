@@ -96,7 +96,7 @@ button:hover {
 .screen{
       right: 0px;
       bottom: 5%;
-      border: 5px solid black;
+      border: none;
       border-radius: 5px;
       font-size: 15px;
       padding: 0.5rem 0.7em;
