@@ -111,14 +111,21 @@ button:hover {
 END Glitch hello-app default styles
 ******************************************************************************/
 
-body {
+html {
       font-family: Arial, helvetica, sans-serif;
-       background-color: var(--color-padrao);
+       background-color: red;
        width: 100%;
        background-repeat: no-repeat;
       background-size: 140%;
       justify-content: center;
      }
+html-home{
+      font-family: Arial, helvetica, sans-serif;
+       background-color: blue;
+       width: 100%;
+      justify-content: center;
+     }
+
 a:hover{
   color: red;
 }
