@@ -65,6 +65,8 @@ text{
   color: black;
 }
 text:hover{
+  box-shadow: -8px 2px 20px gray;
+  transform: translateY(3px);
   transition: all 1s ease-out;
 }
 /* Iamport fonts *//* Our remix on glitch button */
