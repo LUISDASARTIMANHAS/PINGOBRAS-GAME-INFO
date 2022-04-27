@@ -64,7 +64,7 @@ text{
   font: Arial;
   color: black;
 }
-text:hover{
+.ani:hover{
   box-shadow: -8px 2px 20px gray;
   transform: translateY(3px);
   transition: all 1s ease-out;
