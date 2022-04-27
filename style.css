@@ -144,6 +144,10 @@ main-text{
   margin-bottom: 15px;
   color: black;
 }
+img{
+  height: 600px;
+  width: 100%;
+}
 
 h2{
    display: inline-block;
