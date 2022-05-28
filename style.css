@@ -126,20 +126,22 @@ body{
        font-family: "Courier New", Courier, monospace;
        font-size: 25px; 
        background-image: url("https://cdn.glitch.global/5dbcda54-2637-4dc9-934d-47a4062a55f3/picasion.com_6db3540ff680a70fdef6e3609069ddbf.gif?v=1653757577862");
-       background-position: center;
        background-size: cover;
-       width: 100%;
       justify-content: center;
      }
 .server{
        font-family: "Courier New", Courier, monospace;
        font-size: 25px; 
        background-image: url("https://cgbgames.com.br/central/images/img/02.png");
-       background-position: center;
        background-size: cover;
        background-repeat: no-repeat;
-       width: 100%;
-      justify-content: center;
+}
+.contato{
+       font-family: "Courier New", Courier, monospace;
+       font-size: 25px; 
+       background-image: url("https://www.tijucas.sc.leg.br/institucional/fotos/2020/imagens-em-noticias/ouvidoria_pag.jpg");
+       background-size: cover;
+       background-repeat: no-repeat;
 }
 
 a:hover{
@@ -154,6 +156,8 @@ main-text{
 }
 .entorno{
   color: black;
+  background: white;
+  opacity: 0.7;
 }
 img{
   height: auto;
