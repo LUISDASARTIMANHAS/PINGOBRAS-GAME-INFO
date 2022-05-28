@@ -321,3 +321,31 @@ barraicon a:hover {
 .barramain{
   background-color: white; /* Add an active/current color */
 }
+
+.barra-pesquisa {
+  position: absolute;
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid gray;
+}
+
+/* Style the navigation menu */
+menu{
+  list-style-type: none;
+  position: absolute;
+  left: 3%;
+  font-size: 15px;
+}
+
+/* Style the navigation links */
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: green;
+}
