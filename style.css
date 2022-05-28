@@ -333,6 +333,7 @@ barraicon a:hover {
   color: black;
 }
 
+
 /* Style the navigation menu */
 menu{
   list-style-type: none;
@@ -342,7 +343,7 @@ menu{
   left: 13%;
   font-size: 20px;
   top: 58%;
-  display: visible;
+  display: block;
   width: 74%;
   overflow: hidden;
   padding-inline-end: 8px;
@@ -357,9 +358,10 @@ menu li a {
   white-space: nowrap;
   text-decoration: none;
   color: black;
-  display: block;
+  display: none;
 }
 
 menu li a:hover {
   background-color: green;
+  display: visible;
 }

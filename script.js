@@ -20,6 +20,16 @@ if (btn) {
   };
 }
 
+let menuVisibilidade = document.getElementById('escondedor');
+var esconder = document.querySelector('.list');
+menuVisibilidade.addEventListener('click', function() {
+    if(esconder.style.display === 'block') {
+      esconder.style.display = 'none';
+  } else {
+      esconder.style.display = 'block';
+  }
+});
+
 // This is a single line JS comment
 /*
 This is a comment that can span multiple lines 
