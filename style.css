@@ -140,6 +140,7 @@ main-text{
   font-size: 20pt;
   margin-bottom: 15px;
   color: black;
+  font: bold;
 }
 .entorno{
   color: black;
@@ -273,7 +274,28 @@ baixoL{
   left: 16px;
 }
 
-
 .dipped {
   transform: translateY(5px);
+}
+
+.icon-bar {
+  width: 90px; /* Set a specific width */
+  background-color: #555000; /* Dark-grey background */
+}
+
+.icon-bar a {
+  display: block; /* Make the links appear below each other instead of side-by-side */
+  text-align: center; /* Center-align text */
+  padding: 16px; /* Add some padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font-size */
+}
+
+.icon-bar a:hover {
+  background-color: black; /* Add a hover color */
+}
+
+.active {
+  background-color: #04AA6D; /* Add an active/current color */
 }
