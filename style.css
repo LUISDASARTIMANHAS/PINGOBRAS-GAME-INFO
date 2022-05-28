@@ -329,29 +329,37 @@ barraicon a:hover {
   font-size: 18px;
   padding: 11px;
   border: 1px solid gray;
+  outline: none;
+  color: black;
 }
 
 /* Style the navigation menu */
 menu{
   list-style-type: none;
+  color: black;
   background: white;
   position: absolute;
-  left: 15%;
-  font-size: 15px;
-  top: 60%;
-  display: text;
-  width: 75%;
+  left: 13%;
+  font-size: 20px;
+  top: 58%;
+  display: none;
+  width: 74%;
   overflow: hidden;
+  padding-inline-end: 8px;
+  padding-inline-start: 8px;
+  white-space: nowrap;
 }
 
 /* Style the navigation links */
-#myMenu li a {
-  padding: 12px;
+menu li a {
+  padding-inline-end: 8px;
+  padding-inline-start: 8px;
+  white-space: nowrap;
   text-decoration: none;
   color: black;
   display: block;
 }
 
-#myMenu li a:hover {
+menu li a:hover {
   background-color: green;
 }
