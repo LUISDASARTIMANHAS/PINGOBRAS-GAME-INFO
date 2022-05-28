@@ -128,12 +128,6 @@ body{
        width: 100%;
       justify-content: center;
      }
-.body2{
-      font-family: Arial, helvetica, sans-serif;
-       background-color: white;
-       width: 100%;
-      justify-content: center;
-     }
 
 a:hover{
   color: red;
@@ -248,11 +242,27 @@ btn,input{
   transform: translateY(5px);
 }
 
-/* Button dip
-- Toggling this class on and off will move it down and up again
-- The button transition property above determines the speed of the translate (500ms)
-*/
-  
-  .dipped {
+topoL{
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+meio{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+baixoL{
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+
+.dipped {
   transform: translateY(5px);
 }
