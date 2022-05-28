@@ -142,7 +142,12 @@ body{
        background-image: url("https://www.tijucas.sc.leg.br/institucional/fotos/2020/imagens-em-noticias/ouvidoria_pag.jpg");
        background-repeat: no-repeat;
 }
-
+.pesquisar{
+       font-family: "Courier New", Courier, monospace;
+       font-size: 25px; 
+       background-image: url("https://as2.ftcdn.net/v2/jpg/00/44/59/11/500_F_44591183_YpnEVlgXNy0x4uTfArngnFXM8Nu4umZI.jpg");
+       background-repeat: no-repeat;
+}
 a:hover{
   color: red;
 }
