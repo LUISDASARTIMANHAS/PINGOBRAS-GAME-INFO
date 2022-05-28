@@ -324,7 +324,8 @@ barraicon a:hover {
 
 .barra-pesquisa {
   position: absolute;
-  width: 100%;
+  top: 50%;
+  width: 75%;
   font-size: 18px;
   padding: 11px;
   border: 1px solid gray;
@@ -333,9 +334,14 @@ barraicon a:hover {
 /* Style the navigation menu */
 menu{
   list-style-type: none;
+  background: white;
   position: absolute;
-  left: 3%;
+  left: 15%;
   font-size: 15px;
+  top: 60%;
+  display: text;
+  width: 75%;
+  overflow: hidden;
 }
 
 /* Style the navigation links */
@@ -343,7 +349,7 @@ menu{
   padding: 12px;
   text-decoration: none;
   color: black;
-  display: block
+  display: block;
 }
 
 #myMenu li a:hover {
