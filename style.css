@@ -131,6 +131,16 @@ body{
        width: 100%;
       justify-content: center;
      }
+.server{
+       font-family: "Courier New", Courier, monospace;
+       font-size: 25px; 
+       background-image: url("https://cgbgames.com.br/central/images/img/02.png");
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+       width: 100%;
+      justify-content: center;
+}
 
 a:hover{
   color: red;
