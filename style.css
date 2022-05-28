@@ -328,11 +328,11 @@ barraicon a:hover {
   width: 75%;
   font-size: 18px;
   padding: 11px;
-  border: 1px solid gray;
+  border: 2px solid gray;
   outline: none;
   color: black;
+  border-radius: 100px;
 }
-
 
 /* Style the navigation menu */
 menu{
@@ -342,8 +342,8 @@ menu{
   position: absolute;
   left: 13%;
   font-size: 20px;
-  top: 58%;
-  display: block;
+  top: 60%;
+  display: none;
   width: 74%;
   overflow: hidden;
   padding-inline-end: 8px;
@@ -358,7 +358,7 @@ menu li a {
   white-space: nowrap;
   text-decoration: none;
   color: black;
-  display: none;
+  display: block;
 }
 
 menu li a:hover {

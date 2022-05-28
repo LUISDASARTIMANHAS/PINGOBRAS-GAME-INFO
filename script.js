@@ -20,13 +20,13 @@ if (btn) {
   };
 }
 
-let menuVisibilidade = document.getElementById('escondedor');
-var esconder = document.querySelector('.list');
-menuVisibilidade.addEventListener('click', function() {
-    if(esconder.style.display === 'block') {
-      esconder.style.display = 'none';
+let btnpesquisar = document.getElementById('pesquisador');
+var menuVisibilidade = document.querySelector('menu');
+btnpesquisar.addEventListener('click', function() {
+    if(menuVisibilidade.style.display === 'block') {
+      menuVisibilidade.style.display = 'none';
   } else {
-      esconder.style.display = 'block';
+      menuVisibilidade.style.display = 'block';
   }
 });
 
