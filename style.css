@@ -123,8 +123,11 @@ END Glitch hello-app default styles
 ******************************************************************************/
 
 body{
-      font-family: Arial, helvetica, sans-serif;
-       background-color: white;
+       font-family: "Courier New", Courier, monospace;
+       font-size: 25px; 
+       background-image: url("https://www.industriadejogos.com.br/wp-content/uploads/cache/3d/7e/3d7e8b5e378f69bfb2ac6bbb2a15dd66.jpg");
+       background-position: center;
+       background-size: cover;
        width: 100%;
       justify-content: center;
      }
@@ -160,6 +163,11 @@ hr{
   margin-bottom: 10%;
   width: 60%;
 }
+hr .hrmeio{
+  margin: auto;
+  width: 40%;
+}
+
 tituloblue{
   text-align: center;
    margin-bottom: 20px;
