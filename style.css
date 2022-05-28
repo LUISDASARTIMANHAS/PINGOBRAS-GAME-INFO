@@ -342,7 +342,7 @@ menu{
   left: 13%;
   font-size: 20px;
   top: 58%;
-  display: none;
+  display: visible;
   width: 74%;
   overflow: hidden;
   padding-inline-end: 8px;
