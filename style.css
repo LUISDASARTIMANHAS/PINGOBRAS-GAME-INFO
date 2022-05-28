@@ -125,7 +125,7 @@ END Glitch hello-app default styles
 body{
        font-family: "Courier New", Courier, monospace;
        font-size: 25px; 
-       background-image: url("https://www.industriadejogos.com.br/wp-content/uploads/cache/3d/7e/3d7e8b5e378f69bfb2ac6bbb2a15dd66.jpg");
+       background-image: url("https://cdn.glitch.global/5dbcda54-2637-4dc9-934d-47a4062a55f3/picasion.com_6db3540ff680a70fdef6e3609069ddbf.gif?v=1653757577862");
        background-position: center;
        background-size: cover;
        width: 100%;
@@ -139,6 +139,9 @@ main-text{
   text-align: center;
   font-size: 20pt;
   margin-bottom: 15px;
+  color: black;
+}
+.entorno{
   color: black;
 }
 img{
