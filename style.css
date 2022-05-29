@@ -106,15 +106,17 @@ button:hover {
 .screen{
       right: 0px;
       bottom: 5%;
-      border: 3px dashed black;
+      border: 5px solid black;
       border-radius: 5px;
       font-size: 15px;
       padding: 0.5rem 0.7em;
-      background: #ffffff99;
-      color: black;
-      cursor: none;
+      background-color:red;
+      color: white;
+      -webkit-font-smoothing: antialiased;
+      cursor: pointer;
       z-index: 11;
 }
+
 .tela{
       right: 0px;
       bottom: 5%;
