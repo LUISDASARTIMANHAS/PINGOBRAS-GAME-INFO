@@ -27,12 +27,15 @@
   
     <form action="action_page.php">
     <label for="fname">Primeiro nome </label>
+      <br>
     <input type="text" id="fname" placeholder="Seu nome..">
-      
+      <br>
     <label for="lname">Sobrenome</label>
-    <input type="text" id="lname" placeholder="Seu último Nome..">
-
+      <br>
+    <input type="text" id="lname" placeholder="Seu último Nome.." required="required">
+<br>
     <label for="País">País</label>
+      <br>
     <select id="País" name="País">
       <option value="select">Selecionar País</option>
       <option value="Afeganistão">Afeganistão</option>
@@ -86,14 +89,14 @@
       <option value=""></option>
       <option value=""></option>
       <option value="usa">USA</option>
-      
     </select>
+      <br>
 
     <label for="mensagem">Mensagem de contato</label>
     <textarea id="msmContact" placeholder="Sugiro adicionar isso no jogo" style="height:200px"></textarea>
 
     <button 
-           class="con" 
+           class="btn-contato" 
            type="submit">ENVIAR</button>
   </form>
     
