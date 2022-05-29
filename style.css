@@ -112,12 +112,21 @@ button:hover {
       padding: 0.5rem 0.7em;
       background: #ffffff99;
       color: black;
-      -webkit-font-smoothing: antialiased;
       cursor: none;
       z-index: 11;
-  
 }
-
+.tela{
+      right: 0px;
+      bottom: 5%;
+      border: 3px dashed black;
+      border-radius: 5px;
+      font-size: 15px;
+      padding: 0.5rem 0.7em;
+      background: #ffffff99;
+      color: black;
+      cursor: none;
+      z-index: 11;
+}
 /******************************************************************************
 END Glitch hello-app default styles
 ******************************************************************************/
