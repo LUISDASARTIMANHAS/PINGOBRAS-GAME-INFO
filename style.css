@@ -170,6 +170,13 @@ main-text{
   color: black;
   font: bold;
 }
+.disabled{
+  cursor: none;
+  opacity: 0.5;
+}
+.disabled:hover{
+cursor: not-allowed;  
+}
 .entorno{
   color: black;
   background: white;
