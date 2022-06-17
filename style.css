@@ -306,10 +306,11 @@ meio{
 }
 
 baixoL{
+  color: gold;
   font-size: 17px;
   position: absolute;
   bottom: 0;
-  margin-top: 10pt;
+  margin-top: 2px;
   text-align: center;
 }
 
@@ -371,7 +372,6 @@ menu{
   padding-inline-start: 8px;
   white-space: nowrap;
 }
-
 /* Style the navigation links */
 menu li a {
   padding-inline-end: 8px;

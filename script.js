@@ -22,7 +22,7 @@ if (btn) {
 
 let btnpesquisar = document.getElementById('pesquisador');
 var menuVisibilidade = document.querySelector('menu');
-btnpesquisar.addEventListener('click', function() {
+btnpesquisar.addEventListener('mouseout', function() {
     if(menuVisibilidade.style.display === 'block') {
       menuVisibilidade.style.display = 'none';
   } else {
@@ -36,7 +36,7 @@ This is a comment that can span multiple lines
 - use comments to make your own notes!
 */
 
-let fullscreen;
+let fullscreen
 let fsEnter = document.getElementById('fullscr');
 fsEnter.addEventListener('click', function (e) {
     e.preventDefault();
