@@ -136,7 +136,7 @@ END Glitch hello-app default styles
 body{
        font-family: "Courier New", Courier, monospace;
        font-size: 25px; 
-       background-image: url("https://cdn.glitch.global/5dbcda54-2637-4dc9-934d-47a4062a55f3/picasion.com_6db3540ff680a70fdef6e3609069ddbf.gif?v=1653757577862");
+       background-image: url("https://cdn.discordapp.com/attachments/966722860137730158/987126176898224148/21v.png");
        background-position: center;
        background-size: cover;
       justify-content: center;
@@ -306,9 +306,11 @@ meio{
 }
 
 baixoL{
+  font-size: 17px;
   position: absolute;
   bottom: 0;
-  left: 16px;
+  margin-top: 10pt;
+  text-align: center;
 }
 
 .dipped {
