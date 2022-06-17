@@ -21,15 +21,17 @@ if (btn) {
 }
 
 let btnpesquisar = document.getElementById('pesquisador');
-var menuVisibilidade = document.querySelector('menu');
-btnpesquisar.addEventListener('mouseout', function() {
-    if(menuVisibilidade.style.display === 'block') {
-      menuVisibilidade.style.display = 'none';
-  } else {
-      menuVisibilidade.style.display = 'block';
-  }
-});
 
+var menuVisibilidade = document.querySelector('menu');
+
+btnpesquisar.addEventListener('mouseover', function() {
+      menuVisibilidade.style.display = 'block';
+      menuVisibilidade.style.cursor = 'help';
+});
+ btnpesquisar.addEventListener('click', function() {
+      menuVisibilidade.style.display = 'none';
+});
+   
 // This is a single line JS comment
 /*
 This is a comment that can span multiple lines 
